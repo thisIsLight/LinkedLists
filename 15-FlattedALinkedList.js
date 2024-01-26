@@ -1,5 +1,5 @@
 //Question
-//You are given a linked list and you have to find if it is a circular linked list
+//You are given a linked list and you have to reverse it
 
 
 //Solution
@@ -25,20 +25,12 @@ const insertAtEnd = (head, newNodeData) => {
     }
 
     head.next = newNode
-    return newNode
 }
 
 //Traverse a list
 const traverse = (head) => {
-
-    let data = head.data
-
     let res = ''
     while(head){
-        if(head.data == data){
-            console.log('Circle Detected')
-            break
-        }
         res+=head.data
         head = head.next
         if(head)
@@ -47,6 +39,10 @@ const traverse = (head) => {
     console.log(res)
 }
 
+//reverse through recursion
+const reverseLLRecursion = (head, prev) => {
+
+}
 
 
 //Inputs
@@ -58,8 +54,6 @@ insertAtEnd(listhead, 1)
 insertAtEnd(listhead, 2)
 insertAtEnd(listhead, 3)
 insertAtEnd(listhead, 4)
-let last = insertAtEnd(listhead, 6)
-
-last.next = listhead.next
+insertAtEnd(listhead, 6)
 
 traverse(listhead.next)

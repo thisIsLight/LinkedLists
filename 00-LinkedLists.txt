@@ -1,0 +1,6 @@
+This repository is all about data structures called Linked List.
+
+A linked list is a data structure that has wide range of usage when we are talking of non linear data structures like Trees, Graphs, Tries, etc
+
+We are going to understand this underlying linked list with its CRUD implementations and few applications of it as well.
+
