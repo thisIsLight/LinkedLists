@@ -69,7 +69,7 @@ const isPalindrome = (head) => {
         revereselist = revereselist.next
     }
 
-    console.log('is a palindrome')
+    console.log('Is a palindrome')
 }
 
 //reverse through recursion
